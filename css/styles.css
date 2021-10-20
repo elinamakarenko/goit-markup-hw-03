@@ -53,7 +53,6 @@ width: 1600px;
 .btn-portfolio {
   font-weight: 500;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
   background-color: #f5f4fa;
@@ -143,15 +142,25 @@ border-bottom: 1px solid #ECECEC;
   text-align: center;
   background-color: var(--background-color);
 }
+.hero-container{
+padding-top: 280px;
+padding-bottom: 200px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-title-color);
+  width: 696px;
+  margin-bottom:30px;
+  
 }
+
 /*about*/
 .about-item {
   font-weight: 700;
@@ -207,8 +216,14 @@ border-bottom: 1px solid #ECECEC;
   display: flex;
   width: 611px;
 }
+.filters-item{
+  justify-content: space-between;
+}
 .filters-item:not(:last-child){
   margin-right: 8px;
+}
+.filters > .filters-item {
+  flex-grow: 1;
 }
 /*portfolio*/
 .portfolio-names {
